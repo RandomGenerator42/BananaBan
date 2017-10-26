@@ -33,4 +33,4 @@ app.on("guildMemberAdd", (member) => {
   }
 })
 
-app.login(process.env.'MzA0MTQ3Mjk1Mjk5OTYwODMy.DHC7Rw.kvjL6yRA4Be9tr6y5aTmzW66hJs')
+app.login(process.env.Bot_Token)
