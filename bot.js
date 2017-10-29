@@ -15,6 +15,7 @@ app.on('ready', () => {
 
 app.on('message', message => {
 	if(message.content.startsWith("!jaz Zum Boz!")){
+		message.channel.send("Hold up")
 		setInterval(()=>message.channel.send("On"),1000*60*15)
 	}
 	if(message.content.startsWith("!joke"){
