@@ -14,13 +14,11 @@ app.on('ready', () => {
 });
 
 app.on('message', message => {
-	if(message.content.startsWith("!jaz Zum Boz!")){
-		message.channel.send("Hold up")
+	if(message.content == "!jaz Zum Boz!"){
+		message.channel.send("On")
 		setInterval(()=>message.channel.send("On"),1000*60*15)
 	}
-	if(message.content.startsWith("!joke"){
-	   
-	   }
+
 	if(message.member.roles.find("name", "Moderators")&&message.content.startsWith("!mute")){
 
     message.mentions.users.forEach(event=>{
