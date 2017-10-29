@@ -8,6 +8,7 @@ let data = JSON.parse(fs.readFileSync("data.json"))
 console.log(data)
 
 app.on('ready', () => {
+  app.user.setGame('with Lurpahi Balls');
   console.log(`Logged in as ${app.user.tag}!`);
 });
 
