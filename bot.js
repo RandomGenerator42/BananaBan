@@ -1,6 +1,7 @@
 let discord = require("discord.js")
 let fs = require("fs")
 
+
 let app = new discord.Client()
 
 let data = JSON.parse(fs.readFileSync("data.json"))
@@ -13,6 +14,12 @@ app.on('ready', () => {
 });
 
 app.on('message', message => {
+	if(message.content.startsWith("!jaz Zum Boz!")){
+		setInterval(()=>message.channel.send("On"),1000*60*15)
+	}
+	if(message.content.startsWith("!joke"){
+	   
+	   }
 	if(message.member.roles.find("name", "Moderators")&&message.content.startsWith("!mute")){
 
     message.mentions.users.forEach(event=>{
