@@ -16,7 +16,7 @@ app.on('ready', () => {
 });
 
 app.on('message', message => {
-	if(message.content.includes("@Xcom")){
+	if(message.content.includes("<@304147295299960832>")){
 	   message.channel.send("Sorry I am taking a break from discord now")
 }
 	else{
