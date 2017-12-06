@@ -16,7 +16,7 @@ app.on('ready', () => {
 });
 
 app.on('message', message => {
-	if(message.content.includes("@Xcom"){
+	if(message.content.includes("@Xcom")){
 	   message.channel.send("Sorry I am taking a break from discord now")
 }
 	if(message.member.roles.find("name", "Moderators")&&message.content.startsWith("!mute")){
