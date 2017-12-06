@@ -16,14 +16,6 @@ app.on('ready', () => {
 });
 
 app.on('message', message => {
-	if(message.channel.id == '320750032745791489'&&first){
-		message.channel.send(randomSentence({min: 4, max: 9}))
-		setInterval(()=>{
-      message.channel.send(randomSentence({min: 4, max: 9}))},1000*60*(10+Math.floor(Math.random()*10)
-        )
-      )
-    first = false
-	}
 
 	if(message.member.roles.find("name", "Moderators")&&message.content.startsWith("!mute")){
 
