@@ -22,7 +22,10 @@ app.on('message', message => {
 	else{
 		console.log("wazzup",message.content)
 	}*/
-	if(message.member.roles.find("name", "Moderators")&&message.content.startsWith("!mute")){
+   if(message.content.startsWith(!x)){
+	console.log(message.mentions)	   
+   }
+	/*if(message.member.roles.find("name", "Moderators")&&message.content.startsWith("!mute")){
 
     message.mentions.users.forEach(event=>{
       let user = message.guild.members.get(event.id)
@@ -34,7 +37,7 @@ app.on('message', message => {
     })
   }
   
-});
+}*/);
 
 app.on("guildMemberAdd", (member) => {
   let arr = data.people.filter(event=>event==member.id)
