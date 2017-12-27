@@ -37,7 +37,7 @@ app.on('message', message => {
     })
   }
   
-}*/);
+*/});
 
 app.on("guildMemberAdd", (member) => {
   let arr = data.people.filter(event=>event==member.id)
