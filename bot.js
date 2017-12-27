@@ -22,7 +22,7 @@ app.on('message', message => {
 	else{
 		console.log("wazzup",message.content)
 	}*/
-   if(message.content.startsWith(!x)){
+   if(message.content.startsWith("!x")){
 	console.log(message.mentions)	   
    }
 	/*if(message.member.roles.find("name", "Moderators")&&message.content.startsWith("!mute")){
