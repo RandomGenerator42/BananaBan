@@ -16,6 +16,7 @@ app.on('ready', () => {
 });
 
 app.on('message', message => {
+	if(message.author.id=="398563338323492865") return
 	if(message.content.includes("<@!304147295299960832>")||message.content.includes("<@304147295299960832>")){
 	   message.channel.send("Sorry I am taking a break from discord now")
 }
