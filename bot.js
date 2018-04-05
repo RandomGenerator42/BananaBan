@@ -17,6 +17,7 @@ app.on('ready', () => {
 
 app.on('message', message => {
 	if(message.author.id=="398563338323492865"||message.author.id=="137238457784336384"||message.channel.id.includes("175964903033667585")) return
+	if(message.conetnt.includes(app.user.id)) { message.reply("I am currently taking a break from discord")}
 	try{
   if(message.member.roles.find("name", "Moderators")&&message.content.startsWith("!mute")){
 
