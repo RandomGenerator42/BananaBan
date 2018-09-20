@@ -7,5 +7,8 @@ app.on('ready', () => {
   console.log(`Logged in as ${app.user.tag}!`);
 });
 
-
+app.on('message', message => {
+ console.log(message)
+}) 
+ 
 app.login(process.env.BOT_TOKEN)
