@@ -3,7 +3,7 @@ let discord = require("discord.js")
 let app = new discord.Client()
 
 app.on('ready', () => {
-  app.user.setActivity('break from discord');
+  app.user.setActivity('depression');
   console.log(`Logged in as ${app.user.tag}!`);
 });
 
